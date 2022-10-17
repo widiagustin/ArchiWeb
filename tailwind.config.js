@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
         'inter': ['Inter', 'sans-serif']
+      },
+      colors: {
+        'dark-green': '#254D4D'
       }
     },
   },
