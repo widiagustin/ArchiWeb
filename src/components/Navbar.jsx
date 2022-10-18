@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -6,14 +7,13 @@ const Navbar = () => {
       <div className='w-full'>
         <div className='flex justify-between max-w-6xl mx-auto items-center h-20'>
           <div>
-            <h1 className='font-playfair text-2xl font-semibold'>ArchiWeb</h1>
+            <Link to='/' className='font-playfair text-2xl font-semibold'>ArchiWeb</Link>
           </div>
           <div>
             <ul className='flex gap-16 text-md'>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#projects">Project</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <Link to='/'>Home</Link>
+              <Link to='/projects'>Projects</Link>
+              <Link to='/about'>About</Link>
             </ul>
           </div>
         </div>
